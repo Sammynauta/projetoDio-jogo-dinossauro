@@ -8,6 +8,11 @@ Neste projeto o desafio é criar uma cópia do jogo do dinossauro, famoso no Chr
 - HTML, CSS AND JAVASCRIPT.
 - PNG Images;
 
+## Start Dev Environment for VSCode
+- Open project folder in VSCode
+- Install Live Server or Live Sass Compiler extension
+- Right click index.html > Open with Live Server
+
 ### SLIDE
 
 <img src="img/Dino-slide.png">

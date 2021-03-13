@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    background: gray;
+    height: 120px;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+header .socialmidia {
+    font-size: 30px;
+    padding: 10px;
+    margin: 5px;
+}
+
+header .socialmidia a i {
+    color: white;
+}
+
+header .socialmidia a i:hover {
+    color: rgb(58, 57, 57);
+    transition: 0.5s ease-in-out;
+}
+
+body {
+    background: #fafafa;
+  }
+  
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio {
+    margin-top: 30px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.inicio h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.5rem;
+    background-image: linear-gradient(90deg, #a6aca6, #373837);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:  transparent;
+
+}
+
+.inicio button {
+    border-radius: 15px;
+    padding: 10px;
+    background: #a6aca6;
+    border: 2px solid black;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+}
+
+.inicio button:hover {
+    background: #373837;
+    transition: 0.5s ease-in-out;
+    color: #fafafa;
+
+}
+.dino {
+    position: absolute;
+    bottom: 0;
+    background-image: url(/img/dino.png);
+    width: 60px;
+    height: 60px;
+    
+}
+  
+.cactus {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    background-image: url(/img/cactus.png);
+}
+  
+.game-over {
+    text-align: center;
+     color: #666;
+    margin: 50px 0;
+    font-family: arial;
+}
+  
+@keyframes slideright {
+    from {
+        background-position: 50000%;
+    }
+    to {
+        background-position: 0%;
+    }
+  }
+  
+.background {
+    position: absolute;
+    bottom: 0px;
+    background-image: url('/img/background.png');
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear;
+    -webkit-animation: slideright 600s infinite linear;
+    width: 100%;
+    height: 200px;
+}

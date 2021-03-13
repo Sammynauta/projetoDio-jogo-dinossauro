@@ -5,6 +5,8 @@ let isJumping = false;
 let isGameOver = false;
 let position = 0;
 
+function start () {
+
 function handleKeyUp(event) {
     if (event.keyCode === 32) {
       if (!isJumping) {
@@ -69,3 +71,5 @@ function createCactus() {
   }
 createCactus();
 document.addEventListener('keyup', handleKeyUp);
+
+}
